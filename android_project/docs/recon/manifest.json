@@ -1,0 +1,87 @@
+{
+  "project": "taolesi-nas-app",
+  "version": "1.0.6",
+  "versionCode": 6,
+  "recon_timestamp": "2026-09-28",
+  "recon_modules": [
+    "docs/recon/topologist.md",
+    "docs/recon/contract.md",
+    "docs/recon/spec.md",
+    "docs/recon/debt.md"
+  ],
+  "target_paths": [
+    "app/build.gradle.kts",
+    "app/src/main/AndroidManifest.xml",
+    "app/src/main/java/com/taolesi/nas/net/WebDavClient.kt",
+    "app/src/main/java/com/taolesi/nas/ui/viewmodel/NasViewModel.kt",
+    "app/src/main/java/com/taolesi/nas/data/PreferencesManager.kt",
+    "app/src/main/java/com/taolesi/nas/data/SyncManager.kt",
+    "app/src/main/java/com/taolesi/nas/ui/screens/DashboardScreen.kt",
+    "app/src/main/java/com/taolesi/nas/ui/screens/PhotosScreen.kt",
+    "app/src/main/java/com/taolesi/nas/ui/screens/FilesScreen.kt",
+    "app/src/main/java/com/taolesi/nas/ui/screens/SettingsScreen.kt",
+    "app/src/main/java/com/taolesi/nas/MainActivity.kt",
+    "app/src/test/java/com/taolesi/nas/V106UpgradeVerificationTest.kt"
+  ],
+  "test_suites": [
+    {
+      "name": "V106UpgradeVerificationTest",
+      "path": "app/src/test/java/com/taolesi/nas/V106UpgradeVerificationTest.kt",
+      "test_count": 15,
+      "coverage_domains": [
+        "自适应端点探测 (通用WebDAV/自定义路径/Nextcloud退化/误粘贴脱壳/特殊字符编码/错误映射)",
+        "网速统计模式切换 (全频谱速率格式化/在线采样刷新/离线强制清零/JVM及硬件不支持降级)",
+        "保活服务配置与零后台驻留架构防护 (Manifest白盒无Service无Receiver/前台协程生命周期/单向防误删)",
+        "仪表盘状态数据模型 (默认值契约/StorageQuota无限配额/状态机四态流转/不可变性)"
+      ]
+    },
+    {
+      "name": "WebDavClientTest",
+      "path": "app/src/test/java/com/taolesi/nas/net/WebDavClientTest.kt",
+      "test_count": 11
+    },
+    {
+      "name": "SystemReliabilityTest",
+      "path": "app/src/test/java/com/taolesi/nas/SystemReliabilityTest.kt",
+      "test_count": 7
+    },
+    {
+      "name": "TrafficStatsProbeTest",
+      "path": "app/src/test/java/com/taolesi/nas/TrafficStatsProbeTest.kt",
+      "test_count": 4
+    },
+    {
+      "name": "ReviewerVerificationProbeTest",
+      "path": "app/src/test/java/com/taolesi/nas/ReviewerVerificationProbeTest.kt",
+      "test_count": 4
+    },
+    {
+      "name": "DashboardScreenRefactorTest",
+      "path": "app/src/test/java/com/taolesi/nas/DashboardScreenRefactorTest.kt",
+      "test_count": 2
+    },
+    {
+      "name": "ViewModelScopeTest",
+      "path": "app/src/test/java/com/taolesi/nas/ViewModelScopeTest.kt",
+      "test_count": 1
+    },
+    {
+      "name": "WebDavPathProbeTest",
+      "path": "app/src/test/java/com/taolesi/nas/WebDavPathProbeTest.kt",
+      "test_count": 1
+    },
+    {
+      "name": "NasViewModelInstantiationTest",
+      "path": "app/src/test/java/com/taolesi/nas/NasViewModelInstantiationTest.kt",
+      "test_count": 1
+    }
+  ],
+  "defense_lines": [
+    "DEF-01: 空密码 Fail-Fast 防爆破防线 (零网络探测)",
+    "DEF-02: 自适应端点分级回退防线 (通用WebDAV/反代挂载/Nextcloud双模)",
+    "DEF-03: 网速统计模式切换与健壮降级防线 (在线刷新/离线清零/try-catch兜底)",
+    "DEF-04: 零后台驻留架构与单向同步防线 (白盒断言0服务0接收器/协作式取消)",
+    "DEF-05: RFC 4918 递归套娃与 XXE 防护防线 (Self项排除/实体注入防御)",
+    "DEF-06: 全自动化单元测试防护网 (46/46 全绿守护)"
+  ]
+}

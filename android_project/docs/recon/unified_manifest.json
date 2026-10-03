@@ -1,0 +1,32 @@
+{
+  "project": "Tale",
+  "version": "1.0.9",
+  "versionCode": 9,
+  "build_status": "BUILD SUCCESSFUL",
+  "unit_tests_run": 77,
+  "unit_tests_passed": 77,
+  "unit_tests_failed": 0,
+  "unit_tests_skipped": 0,
+  "reviewer_verdict": "PASS",
+  "changed_files": [
+    "app/build.gradle.kts",
+    "app/src/main/java/com/taolesi/nas/net/WebDavClient.kt",
+    "app/src/main/java/com/taolesi/nas/data/PreferencesManager.kt",
+    "app/src/main/java/com/taolesi/nas/ui/viewmodel/NasViewModel.kt",
+    "app/src/main/java/com/taolesi/nas/ui/screens/DashboardScreen.kt",
+    "app/src/main/java/com/taolesi/nas/ui/screens/FilesScreen.kt",
+    "app/src/main/java/com/taolesi/nas/ui/screens/PhotosScreen.kt",
+    "app/src/main/java/com/taolesi/nas/ui/screens/VideoScreen.kt",
+    "app/src/main/java/com/taolesi/nas/ui/screens/SettingsScreen.kt",
+    "app/src/main/java/com/taolesi/nas/MainActivity.kt",
+    "docs/recon/tale_v109_recon.md",
+    "docs/recon/unified_manifest.json"
+  ],
+  "verification": {
+    "artifact_path": "D:/HermesWorkspace/taolesi-nas-app/dist/Tale-v1.0.9-release.apk",
+    "artifact_size_mb": 20.46,
+    "artifact_md5": "3e9de1c2b11dc242cec6580d9019621f",
+    "test_command": "./gradlew testDebugUnitTest",
+    "build_command": "./gradlew assembleDebug"
+  }
+}
