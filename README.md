@@ -32,7 +32,8 @@ Tale 是一款专为私有云存储和 WebDAV 打造的安卓原生 NAS 客户�
 
 已编译并签名的安装包可直接获取：
 
-- **APK 预编译安装包**：仓库根目录下的 [`apk/Tale-v1.2.2-release.apk`](apk/Tale-v1.2.2-release.apk)（或前往 GitHub Releases 页面下载）。
+- **GitHub Release 官方下载（推荐）**：前往 👉 **[Tale v1.2.2 Release 页面](https://github.com/maoleidiss/tale-android/releases/tag/v1.2.2)** 直接下载 `Tale-v1.2.2-release.apk`。
+- **仓库直链下载**：[`apk/Tale-v1.2.2-release.apk`](apk/Tale-v1.2.2-release.apk)。
 - 下载后传到安卓手机上直接点击安装即可使用。
 
 ---
